@@ -11,6 +11,16 @@
   text-align: center;
   
 }
+
+.title {
+  font-size:  70px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2%;
+  text-shadow: 0 0 2px black;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
 /* App.css */
 body {
   background-image: url('./background.png');
