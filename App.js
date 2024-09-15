@@ -60,6 +60,7 @@ function App() {
   <>
     <div className="App">
       <header className="App-header">
+        <div className='title'>VoiceNest</div>
       <input id="recordButton" onClick={startListening} type="image" src={microphone} className="microphone-pulse" alt=""/>
         <p id="recordBtnText" className="body-header">Tell me about your dream house!</p>
         <p id="speechresult" className="output-text" >{text}</p>
