@@ -1,0 +1,226 @@
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+.App {
+  text-align: center;
+  
+}
+/* App.css */
+body {
+  background-image: url('./background.png');
+  background-size: cover; /* This makes the background image cover the whole screen */
+  background-position: center; /* This centers the background image */
+  background-repeat: no-repeat; /* This prevents the background image from repeating */
+  padding: 5%;
+  background-attachment: fixed;
+}
+
+
+.response-container {
+  width: 100%;
+  max-width: 500px; /* Limits the container width */
+  padding: 20px; /* Adds padding inside the container */
+  border: 2px solid #ccc; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  margin: 20px auto; /* Centers the container and adds top-bottom space */
+}
+.response {
+  
+}
+
+.microphone {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: #ef293a;
+  transition-duration: 0.4s;
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+  margin-top: 10%;
+}
+.microphone:hover, .microphone-pulse:hover {
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+}
+
+.microphone-pulse {
+  /* height: 40vmin;
+  pointer-events: none; */
+  width: 100px;
+  height: 100px;
+  margin-top: 10%;
+  border-radius: 50px;
+  background: #ef293a;
+  transition-duration: 0.4s;
+  animation: App-Logo-Pulse 1500ms infinite;
+}
+
+@keyFrames App-Logo-Pulse {
+  0%{
+    box-shadow: 0 0 0 0 #ef293a;
+  }
+
+  100% {
+    box-shadow: 0 0 0 17px #ef293a01;
+  }
+}
+
+@keyframes text-pop-up-top {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-40px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.App-header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-Body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.body-header {
+  background-color: rgb(75, 59, 66);
+  border-radius: 15px;
+  padding: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 10%;
+  color: rgb(217,194,186);
+  border-style: solid;
+  border-color: black;
+  font-weight: bold;
+  text-shadow: 0 0 20px black;
+  box-shadow: 0 0 5px black;
+}
+
+.output-text {
+  background-color: rgb(226, 203, 176);
+  border-radius: 15px;
+  padding: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  text-shadow: 0 0 2px gray;
+  box-shadow: 0 0 5px black;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  background-color: rgb(252, 229, 205);
+  flex: 1;
+  margin: 30px;
+  padding: 80px;
+  border-radius: 10%;
+  color: black;
+  border-style: solid;
+  text-shadow: 0 0 5px gray;
+  box-shadow: 0 0 5px black;
+}
+
+.middle-column {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-pop-up {
+  margin: 5%;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.text-pop-up span{
+  display: inline-block;
+  animation: text-pop-up-top 2.5s ease-out infinite both;
+  animation-delay: calc(0.1s*var(--i));
+}
+
+.horizontal-line {
+  border-top: 50px solid #000;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.new-color {
+  color: rgb(82, 47, 47);
+  text-shadow: 0 0 3px black;
+}
+
+.card {
+  width: flex;
+  height: flex;
+  margin: 1.0rem;
+  margin-right: 30% ;
+  margin-left: 30% ;
+
+
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+
+  background-color: #ffffffc2;
+}
+
+.address {
+  font-size: large;
+}
+
+.img {
+  border-radius: 20px;
+}
+
+.btn {
+  padding: 1%;
+  margin-top: 2%;
+  border-radius: 12px;
+  background-color: #70e497;
+}
+
+.btn:hover {
+  transform: scale(1.05, 1.05);
+  background-color: #70e49785;
+  cursor: pointer;
+
+}
